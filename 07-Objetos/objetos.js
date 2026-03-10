@@ -1,44 +1,34 @@
 const pessoa = {
-    nome: "Ana",
-    idade: 26,
+    nome: "Ana", 
+    idade: 26, 
     temCNH: true
 }
 
 pessoa.sobrenome = "Paula"
-// console.log(`Nome: ${pessoa.nome}`)
-// console.log(`Sobrenome: ${pessoa.sobrenome}`)
+
+console.log(`Nome: ${pessoa.nome}`)
+console.log(`Sobrenome: ${pessoa.sobrenome}`)
 
 const livro = {
-    titulo: "O Hobbit",
+    titulo: "O Hobbit", 
+    autor: "J.R.R Tolkien", 
     paginas: 310
 }
 
 livro.publicado = true
 livro.idiomas = ["Inglês", "Português", "Espanhol"]
+
 livro.idiomas.push("Mandarin")
 livro.idiomas.push("Francês")
 
-console.log("Livro antes: ", livro)
+console.log("Livro antes:", livro)
 
 delete livro.paginas
 
-console.log("livro depois: ", livro)
+console.log("Livro depois:", livro)
 
-console.log("Autor do livro: ", livro["autor"])
-// console.log("Autor do livro: ", livro["editora"])
+console.log(`Autor do livro: ${livro["autor"]}`)
 
 const autor = {
-    nome: "J.R.R Token",
-    nacionalidade: "Britânico",
-    idade: 98,
-    livros: [livro]
+    nome: "J.R.R Tolkien"
 }
-
-console.log("Autor", autor)
-
-livro.autor = autor
-
-console.log(livro)
-
-livro.autor.nome
-livro.autor.nacionalidade

@@ -1,0 +1,7 @@
+//Crie uma função apresentarPessoa(nome, idade) que exibe no console: "Olá, meu nome é [nome] e tenho [idade] anos."
+
+function apresentarPessoa(nome, idade){
+    console.log(`Olá, meu ${nome} é nome e tenho ${idade} anos`)
+}
+
+apresentarPessoa("Raney", 33)
